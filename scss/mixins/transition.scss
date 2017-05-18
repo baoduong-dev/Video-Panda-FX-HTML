@@ -1,0 +1,13 @@
+@mixin transition($type , $time) {
+	@if $type == 'all-'#{$type} {
+		-moz-transition: all $time #$ype;
+		-webkit-transition: all $time #type;
+		transition: all $time #type;
+
+	} @else {
+
+		-moz-transition: $time $type;
+		-webkit-transition: $time $type;
+		transition: $time $type;
+	}
+}

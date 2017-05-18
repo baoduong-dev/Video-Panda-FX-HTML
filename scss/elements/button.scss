@@ -1,0 +1,381 @@
+//css button
+
+.btn {
+	min-width: 160px;
+	padding: 7px 20px;
+	background-color: $gray-a;
+	color: $white;
+	border: none;
+	box-shadow: none;
+	@include border-radius(4px);
+	&:hover, &:focus, &:active, &:active:focus, &:active:hover, &:active.focus, &.active:focus, &.active.focus, &.focus {
+		background-color: $gray-7;
+		color: $white;
+		box-shadow: none;
+		outline: 0;
+		outline-offset: 0;
+	}
+}
+
+//button btn-readmore
+.btn-readmore {
+	min-width: 180px;
+	padding: 12px 20px;
+	background-color: transparent;
+	color: $white;
+	border: 1px solid $white;
+	box-shadow: none;
+	text-transform: uppercase;
+	@include font('Roboto', 14px, 700);
+	@include border-radius(4px);
+	@include transition-ease(0.15s);
+	&:hover, &:focus, &:active, &:active:focus, &:active:hover {
+		background-color: $orange;
+		color: $white;
+		border-color: $orange;
+		box-shadow: none;
+		outline: 0;
+		outline-offset: 0
+	}
+}
+
+//button default
+.btn-default {
+	min-width: 180px;
+	padding: 12px 25px;
+	background-color: $orange;
+	color: $white;
+	box-shadow: none;
+	text-transform: uppercase;
+	@include font('Roboto', 14px, 700);
+	@include border-radius(4px);
+	i{
+		font-size: 17px;
+		margin-right: 10px;
+		position: relative;
+		top: 3px;
+	}
+	&:hover, &:focus, &:active, &:active:focus, &:active:hover {
+		background-color: $gray-3;
+		color: $white;
+		box-shadow: none;
+	}
+}
+
+//button btn-comment
+.btn-comment {
+	min-width: 180px;
+	padding: 10px 15px;
+	background-color: $orange;
+	color: $white;
+	box-shadow: none;
+	text-transform: uppercase;
+	@include font('Roboto', 14px, 700);
+	@include border-radius(4px);
+	@include transition-ease(0.15s);
+	&:hover, &:focus, &:active, &:active:focus, &:active:hover {
+		background-color: $gray-3;
+		color: $white;
+		box-shadow: none;
+	}
+}
+
+//button viewnow of banner on home
+.btn-viewnow {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: $orange;
+	color: $white;
+	box-shadow: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	@include font('Roboto', 14px, 700);
+	@include border-radius(4px);
+    
+	i {
+		margin-right: 8px;
+		font-size: 18px;
+		position: relative;
+		top: 3px;
+	}
+    
+	&:hover, &:focus, &:active, &:active:focus, &:active:hover {
+		background-color: $blue;
+		color: $white;
+		border-color: $blue;
+		box-shadow: none;
+	}
+}
+
+//button search
+.btn-search {
+	min-width: 1px;
+	width: auto;
+	height: auto;
+	color: $gray-7;
+	background-color: transparent;
+	padding: 23px 0;
+	position: relative;
+	@include transition-ease(0.2s);
+	i.fa {
+		font-size: 20px;
+	}
+	&:after {
+		content: '';
+		display: block;
+		margin: auto;
+		position: relative;
+		top: 25px;
+		width: 0;
+		height: 2px;
+		background-color: $orange;
+		@include transition-ease(0.2s);
+	}
+	&:hover:after, &:focus:after {
+		width: 100%;
+	}
+	&:hover, &:focus, &:active, &:active:focus, &:active:hover {
+		color: $white;
+		background-color: transparent;
+		outline: 0;
+		box-shadow: none;
+	}
+}
+
+//button reply
+.btn-reply {
+	min-width: 1px;
+    padding: 0;
+    background-color: transparent;
+    color: $blue;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 500;
+    
+    &:before {
+        content: '\f112';
+        font-family: 'FontAwesome';
+        font-size: 10px;
+        position: relative;
+        top: -1px;
+        margin-right: 5px;
+    }
+    
+	&:hover, &:focus, &:active, &:active:focus, &:active:hover {
+		color: $orange;
+		background-color: transparent;
+	}
+}
+
+//btn close search bar
+.btn-close {
+    width: 36px;
+    height: 46px;
+    padding: 10px;
+    cursor: pointer;
+    
+    &:before {
+        content: '';
+        display: block;
+        background: url(../images/theme1/close-icon.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        opacity: 0.65;
+    }
+}
+
+//btn close menu
+.close-menu {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+
+    &:before {
+        content: '';
+        display: block;
+        background: url(../images/theme1/close-icon-white.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+    }
+}// end close menu
+
+//btn close for image popup
+button.mfp-close {
+    width: 55px;
+    height: 55px;
+    padding: 8px 14px !important;
+    opacity: 1;
+    
+    span {
+        display: block;
+        background: url(../images/theme1/close-icon-white.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 50% 50%;
+        width: 100%;
+        height: 100%;       
+    }
+}
+
+//button close on search
+//.btn-close {
+//	width: auto;
+//	height: 44px;
+//	padding: 0 10px;
+//	background-color: $white;
+//	color: $gray-b;
+//	cursor: pointer;
+//	top: 1px;
+//	display: inline-block;
+//	i.fa {
+//		font-size: 16px;
+//		line-height: 44px;
+//		text-align: center;
+//	}
+//	&:hover, &:focus, &:active, &:active:focus, &:active:hover {
+//		background-color: $gray-e0;
+//		color: $gray-5;
+//	}
+//}
+
+//button download class
+.btn-download {
+    min-width: 210px;
+    padding: 7px 20px;
+    display: inline-block;
+    font-weight: bold;
+    color: $orange;
+    border-color: $orange;
+    background-color: $white;
+    border: 1px solid;
+    @include border-radius(3px);
+
+    i.fa {
+    	margin-right: 8px;
+    }
+
+    &:hover,
+    &:focus {
+    	border-color: $blue;
+    	color: $blue;
+    }
+}
+
+// button view now for ADS
+.btn-view-now-ads {
+    display: inline-block;
+    min-width: 120px;
+    padding: 8px 20px;
+    background-color: $orange;
+    @include border-radius(3px);
+    @include font('Roboto', 13px, 700);
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 1px;
+
+    &:hover, &:focus {
+        background-color: $blue;
+        color: $white;
+    }
+}
+
+//btn submit email
+.btn-submit {
+	min-width: 140px;
+	padding: 8px 15px;
+	background-color: $orange;
+	color: $white;
+	box-shadow: none;
+	text-transform: uppercase;
+	@include font('Roboto', 14px, 700);
+	@include border-radius(4px);
+	@include transition-ease(0.15s);
+    
+    i.fa {
+        font-size: 16px;
+        margin-right: 12px;
+    }
+    
+	&:hover, &:focus, &:active, &:active:focus, &:active:hover {
+		background-color: $blue;
+		color: $white;
+		box-shadow: none;
+	}
+}
+
+//btn-social
+.btn-social {
+	width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid rgba(255,255,255,0.12);
+    @include border-radius(4px);
+    background-color: transparent;
+    color: $gray-a;
+
+    i {
+        line-height: 29px;
+        font-size: 16px;
+    }
+
+    &:hover, &:focus {
+        background-color: $orange;
+        color: $white;
+        border-color: $orange;
+    }
+}
+
+
+.btn-view-now-item {
+    display: inline-block;
+    min-width: 120px;
+    padding: 8px 20px;
+    background-color: $orange;
+    @include border-radius(3px);
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 1px;
+    
+    &:hover, &:focus {
+        background-color: $blue;
+        color: $white;
+    }
+}
+
+//btn loadmore comment
+.btn-loadmore {
+//    background: transparent;
+//    background-color: $gray-f5;
+//    border: 1px solid $gray-e;
+//    color: $gray-5;
+////    outline: 0;
+////    outline-offset: 0;
+////    box-shadow: none;
+//    display: block;
+//    padding: 8px 10px;
+//    border-radius: 4px;
+//    font-weight: bold;
+//    
+//    
+//    &:hover {
+//        border-color: $blue;
+//        color: $white;
+//        background-color: $blue;
+//    }
+}
